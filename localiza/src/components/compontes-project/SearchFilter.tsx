@@ -51,11 +51,11 @@ const SearchFilter: React.FC = () => {
                 placeholder="Informe o conteúdo a ser buscado"
                 value={localQuery.conteudo}
                 onChange={(e) => setLocalQuery({ ...localQuery, conteudo: e.target.value })}
-               className="w-full sm:w-[320px]"
+               className="w-full sm:w-[500px]"
             />
                 
 
-            <Button onClick={handleSearch} type="submit"  size="default" variant="default">
+            <Button onClick={handleSearch} type="submit"  size="default" variant="default" className="w-full sm:w-auto">
                 <Search className="h-4 w-4 mr-2" />
                 Pesquisar
             </Button>
