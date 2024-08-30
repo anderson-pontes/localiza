@@ -1,12 +1,14 @@
 import React from 'react';
-import SearchForm from '../../components/compontes-project/SearchForm';
+import SearchFilter from '../../components/compontes-project/SearchFilter';
+import ResultsList from '../../components/compontes-project/ResultsList';
 
-const SearchPage: React.FC = () => {
+const ResultsPage: React.FC = () => {
   return (
     <div>
-      <SearchForm />
+      <SearchFilter />
+      <ResultsList />
     </div>
   );
 };
 
-export default SearchPage;
+export default ResultsPage;

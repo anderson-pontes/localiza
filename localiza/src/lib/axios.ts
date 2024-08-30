@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { env } from "../env"
 
 
 export const api = axios.create({
@@ -6,23 +7,4 @@ export const api = axios.create({
 });
 
 
-api.interceptors.request.use(
-  config => {
-    
-    return config;
-  },
-  error => {
-    return Promise.reject(error);
-  }
-);
 
-api.interceptors.response.use(
-  response => {
-    
-    return response;
-  },
-  error => {
-    
-    return Promise.reject(error);
-  }
-);
